@@ -1,4 +1,4 @@
--- EH Hub Scoreboard - Server Commands
+-- EH Adminsystem - Server Commands
 -- Safe sandbox console commands for admins.
 
 Echo = Echo or {}
@@ -15,7 +15,7 @@ local function CanUseCommand(ply)
     return ply:IsAdmin() or ply:IsSuperAdmin()
 end
 
-concommand.Add("eh_hub_scoreboard_reload", function(ply)
+concommand.Add("eh_adminsystem_reload", function(ply)
     if not CanUseCommand(ply) then
         if Echo.Notify then
             Echo.Notify(ply, "Keine Berechtigung fuer diesen Befehl.")
@@ -27,8 +27,8 @@ concommand.Add("eh_hub_scoreboard_reload", function(ply)
     include("echo/sh_utils.lua")
 
     if Echo.Notify and IsValid(ply) then
-        Echo.Notify(ply, "EH Hub Scoreboard wurde neu geladen.")
+        Echo.Notify(ply, "EH Adminsystem wurde neu geladen.")
     end
 
-    print("[EH Hub Scoreboard] Reload command executed.")
+    print("[EH Adminsystem] Reload command executed.")
 end)
