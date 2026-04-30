@@ -1,0 +1,23 @@
+{
+  "title": "EH Adminsystem",
+  "type": "servercontent",
+  "tags": [
+    "fun",
+    "roleplay"
+  ],
+  "ignore": [
+    "*.psd",
+    "*.vcproj",
+    "*.svn*",
+    "*.git*",
+    "*.gitignore",
+    "*.md",
+    "*.bat",
+    "*.cmd",
+    "*.zip",
+    "*.rar",
+    "*.7z",
+    "thumbs.db",
+    ".DS_Store"
+  ]
+}
